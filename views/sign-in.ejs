@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <head>
+    <title>Sign In</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -9,13 +10,11 @@
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-          rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css"/>
     <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
-          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
         <div class="container w-50">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <form id="c_form-h" class="" method="post" action="/sign-in/check">
+                    <form id="c_form-h" class="" method="post" action="/sign-in/">
                         <div class="form-group row">
                             <label for="mail_address" class="col-4 col-form-label">メールアドレス</label>
                             <div class="col-8">
@@ -47,6 +46,11 @@
                             </div>
                         </div>
                     </form>
+                    <%if(!!error){%>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>警告</strong> <%-error%>
+                    </div>
+                    <%}%>
                 </div>
             </div>
         </div>

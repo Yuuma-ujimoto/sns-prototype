@@ -2,11 +2,11 @@ const express = require("express")
 const router = express.Router()
 const mysql = require("mysql2/promise")
 
-const connection = await mysql.createConnection({
+const connection =  mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "db-name",
+    database: "sns_test",
     multipleStatements: true
 })
 
@@ -26,13 +26,13 @@ router.post("/", async (req, res, next) => {
 
     try {
         const check_auth_sql = "select count(*) as count from user where mail_address = ? and password = ?"
-        const [rows0, field0] = await connection.query(sql, [mail_address, password])
-        if(!rows[0].count){
+        const [rows0, field0] = await connection.query(check_auth_sql, [mail_address, password])
+        if(!rows0[0].count){
             res.render("sign-in",{error:false,result:false})
             return
         }
         const get_user_id_sql = "select id from user where mail_address = ? and password = ?"
-        const [rows1, field1] = await connection.query(sql, [mail_address, password])
+        const [rows1, field1] = await connection.query(get_user_id_sql, [mail_address, password])
         req.session.user_id = rows1[0].id
         res.redirect("/")
     } catch (e) {

@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77bef1bb-99f3-4681-bf76-6c9bf7aca27c" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/public/ajax-script/ajax-template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/router_template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/sign-in.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/sign-up.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/base/app-icon.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/base/app-name.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index/login.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index/nologin.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/sign-in.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/sign-up.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/base/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/base/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sign-in.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sign-in.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sign-up.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sign-up.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="77bef1bb-99f3-4681-bf76-6c9bf7aca27c" name="デフォルト変更リスト" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,8 +68,16 @@
       <workItem from="1621647472863" duration="1435000" />
       <workItem from="1621665238453" duration="4888000" />
       <workItem from="1621753923239" duration="3342000" />
-      <workItem from="1621821033161" duration="2616000" />
+      <workItem from="1621821033161" duration="3321000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1621860842248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621860842249</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

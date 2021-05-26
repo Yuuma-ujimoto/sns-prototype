@@ -1,14 +1,8 @@
 const express = require("express")
 const router = express.Router()
 const mysql = require("mysql2")
-
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "sns_test",
-    multipleStatements: true
-})
+const mysql_config = require("../config/mysql")
+const connection = mysql_config
 
 router.get("/", (req, res) => {
     res.render("sign-up", {error: false})

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bef1bb-99f3-4681-bf76-6c9bf7aca27c" name="デフォルト変更リスト" comment="update">
-      <change afterPath="$PROJECT_DIR$/routes/api/timeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/post_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/post_api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/sign-in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/login.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,36 +21,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ss3SVvDygAme0RCO6NPsC6RhtI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="追加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.16.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.17.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.20.13" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/router" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
-    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\views" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\public" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" path-to-node="$USER_HOME$/.nvm/versions/node/v15.8.0/bin/node" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -74,44 +69,56 @@
       <workItem from="1621647472863" duration="1435000" />
       <workItem from="1621665238453" duration="4888000" />
       <workItem from="1621753923239" duration="3342000" />
-      <workItem from="1621821033161" duration="3406000" />
-      <workItem from="1621989454698" duration="1686000" />
-      <workItem from="1621991159408" duration="2978000" />
+      <workItem from="1621903307545" duration="1459000" />
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1621860842248</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1621860842249</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1621906834978</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1621906834978</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621696440857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621696440857" />
+    <state x="585" y="106" key="CommitChangelistDialog2" timestamp="1622045149236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622045149236" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1622045144248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622045144248" />
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1621864477667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621864477667" />
+    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1621864477667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621864477667" />
+    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1621864477667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621864477667" />
+    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1621864477667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621864477667" />
+    <state x="184" y="85" key="MergeDialog" timestamp="1621860858400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621860858400" />
+    <state x="446" y="150" key="SettingsEditor" timestamp="1621695523932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="446" y="150" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621695523932" />
+    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621860849169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621860849169" />
   </component>
 </project>

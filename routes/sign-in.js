@@ -19,7 +19,33 @@ router.post("/", async (req, res, next) => {
     }
     next()
 },(req, res, next) => {
-
+    const mail_address = req.body.mail_address
+    const password = req.body.password
+    const sql = "select count(*) as count from user where mail_address = ? and password = ?"
+    connection.query(sql,[mail_address,password],(err, result) => {
+        if(err){
+            console.log(err)
+            res.render("sign-in",{error:true})
+            return
+        }
+        if(!result[0].count){
+            res.render("sign-in",{error:true})
+            return;
+        }
+        next()
+    })
+},(req, res) => {
+    const mail_address = req.body.mail_address
+    const sql = "select id from user where mail_address = ?"
+    connection.query(sql,[mail_address],(err, result) => {
+        if(err){
+            console.log(err)
+            res.render("sign-in",{error:true})
+            return
+        }
+        req.session.user_id = result[0].id
+        res.redirect("/")
+    })
 })
 
 module.exports = router

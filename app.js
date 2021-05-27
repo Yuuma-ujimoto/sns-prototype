@@ -31,9 +31,13 @@ const IndexRouter = require("./routes/index")
 const SignUpRouter = require("./routes/sign-up")
 const SignInRouter = require("./routes/sign-in")
 
+const PostApiRouter = require("./routes/api/post_api")
+const TimeLineApiRouter = require("./routes/api/timeline")
 
 app.use("/sign-up",SignUpRouter)
 app.use("/sign-in",SignInRouter)
+app.use("/post-api",PostApiRouter)
+app.use("/timeline-api",TimeLineApiRouter)
 app.use("/",IndexRouter)
 
 

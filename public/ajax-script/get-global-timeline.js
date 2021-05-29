@@ -14,6 +14,7 @@ $(async ()=>{
 
     let html
     // resultにSQLの実行データとか入ってる場合
+
     ajax_result.result.forEach(items=>{
         console.log(items)
         html = `  <section class="card m-1">
@@ -24,7 +25,7 @@ $(async ()=>{
                                 ${items.text}
                             </p>
                             <a href="/tweet/${items.id}" class="card-link">tweet link</a>
-                            <a href="/user/${itesm.user_set_id}" class="card-link">Another link</a>
+                            <a href="/user/" class="card-link">Another link</a>       
                         </div>
                 </section>`
         $("#result").append(html)

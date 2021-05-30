@@ -31,13 +31,15 @@ const IndexRouter = require("./routes/index")
 const SignUpRouter = require("./routes/sign-up")
 const SignInRouter = require("./routes/sign-in")
 
-const PostApiRouter = require("./routes/api/post_api")
-const TimeLineApiRouter = require("./routes/api/timeline")
+const PostAPI = require("./routes/api/post_api")
+const TimeLineAPI = require("./routes/api/timeline")
+const FollowAPI = require("./routes/api/follow")
 
 app.use("/sign-up",SignUpRouter)
 app.use("/sign-in",SignInRouter)
-app.use("/post-api",PostApiRouter)
-app.use("/timeline-api",TimeLineApiRouter)
+app.use("/post-api",PostAPI)
+app.use("/timeline-api",TimeLineAPI)
+app.use("/follow-api",FollowAPI)
 app.use("/",IndexRouter)
 
 

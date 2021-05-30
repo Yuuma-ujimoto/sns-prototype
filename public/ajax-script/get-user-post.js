@@ -3,10 +3,14 @@ $(async ()=>{
     // -----------------
     // Json受け取るタイプ
     const ajax_result = await $.ajax({
-        url:"/timeline-api/get-global-timeline",
-        type: "get",
-        dataType: "json"
+        url:"/timeline-api/get-user-post",
+        type: "post",
+        dataType: "json",
+        data:{
+            post_user_id:$("#user_id").val()
+        }
     })
+
     if(ajax_result.error){
         console.log("error")
         return

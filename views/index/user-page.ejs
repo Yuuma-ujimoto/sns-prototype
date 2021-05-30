@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title><%-include("../base/app-name")%></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+          rel="stylesheet" type="text/css"/>
+    <!-- Third party plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+          rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/ajax-script/post-tweet.js"></script>
+    <script src="/ajax-script/get-user-post.js"></script>
+    <script src="/ajax-script/follow.js"></script>
+</head>
+
+<body>
+<input id="user_id" type="hidden" value="<%-user_id%>">
+<%- include("../base/header") %>
+<main>
+    <div class="py-5" style="">
+        <div class="container w-50 d-flex justify-content-between">
+            <div >
+                <h2>ユーザー名</h2>
+            </div>
+            <div class="">
+                <button id="follow-button" class="btn btn-info">follow</button>
+            </div>
+        </div>
+        <div class="container w-50">
+            <div class="row">
+                <div class="col-md-12" id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

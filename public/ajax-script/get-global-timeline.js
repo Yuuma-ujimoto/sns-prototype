@@ -23,7 +23,7 @@ $(async ()=>{
                             <p class="card-text">
                                 ${items.text}
                             </p>
-                            <a href="/tweet/${items.id}" class="card-link">tweet link</a>
+                            <a href="/status/${items.id}" class="card-link">tweet link</a>
                             <a href="/user/${items.user_set_id}" class="card-link">Another link</a>
                         </div>
                 </section>`

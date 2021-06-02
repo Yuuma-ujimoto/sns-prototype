@@ -13,6 +13,10 @@ router.get("/",
         }
     })
 
+router.get("/status/:id",(req, res) => {
+    res.render("index/status",{status:req.params.id})
+})
+
 router.get("/user/:id", (req, res, next) => {
         const user_id = req.params.id
         res.render("index/user-page", {user_id: user_id})

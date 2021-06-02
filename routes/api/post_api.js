@@ -54,6 +54,32 @@ router.post("/post-tweet",
 
 })
 
+router.post("/get-status",(req, res, next) => {
+    const post_id = req.body.post_id
+    const sql = "select count(*) as count from post where id = ?"
+    connection.query(sql,[post_id],(err, result) => {
+        if(err){
+            res.json({error:true})
+            return
+        }
+        if(!result[0].count){
+            res.json({error:true})
+            return
+        }
+        next()
+    })
+},(req, res, next) => {
+    const post_id = req.body.post_id
+    const sql = "select * from post where id = ?"
+    connection.query(sql,[post_id],(err, result) => {
+        if(err){
+            res.json({error:true})
+            return
+        }
+        res.json({error:false,result:result[0]})
+    })
+    })
+
 router.post("/delete-post",(req, res, next) => {
     const user_id = req.session.user_id
     const post_id = req.body.post_id

@@ -16,14 +16,14 @@ router.post("/post-re-tweet",
             connection.query(sql, [user_id, type, rt_id], (err) => {
                 if (err) {
                     console.log(err)
-                    res.json({error: true})
+                    res.json({error: true,message:"server error"})
                     return
                 }
                 res.json({error: false})
             })
             return
         }
-        res.json({error: true})
+        res.json({error: true,message:"data error"})
 
     })
 

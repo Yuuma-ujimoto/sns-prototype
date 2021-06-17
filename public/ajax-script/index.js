@@ -19,12 +19,11 @@ const get_global_timeline = async () => {
         html = `  <section class="card m-1">
                         <div class="card-body">
                             <h4 class="card-title">${items.user_set_name}</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">@${items.user_set_id}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted"><a href="/user/${items.user_set_id}">@${items.user_set_id}</a></h6>
                             <p class="card-text">
                                 ${items.text}
                             </p>
                             <a href="/status/${items.id}" class="card-link">tweet link</a>
-                            <a href="/user/${items.user_set_id}" class="card-link">Another link</a>
                         </div>
                 </section>`
         $("#result").append(html)

@@ -52,7 +52,7 @@ router.post("/get-user-post",(req, res) => {
         return
     }
     const post_user_id = req.body.post_user_id
-    const sql = "select * from post P inner join user U on P.user_id = U.id where U.user_set_id = ? order by id desc limit 100 "
+    const sql = "select * from post P inner join user U on P.user_id = U.id where U.user_set_id = ? order by P.id desc limit 100 "
     connection.query(sql,[post_user_id],(err, result) => {
         if(err){
             console.log(err)

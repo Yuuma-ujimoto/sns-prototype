@@ -41,7 +41,7 @@
                         <p class="card-text">
                             {{post.text}}
                         </p>
-                        <a h v-bind:href="'/status/'+post.id" class="card-link">tweet link</a>
+                        <a v-bind:href="'/status/'+post.id" class="card-link">tweet link</a>
                         <a v-bind:href="'/user/'+post.user_set_id" class="card-link">Another link</a>
                     </div>
                     </section>

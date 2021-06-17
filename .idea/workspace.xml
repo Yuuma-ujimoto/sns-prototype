@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77bef1bb-99f3-4681-bf76-6c9bf7aca27c" name="デフォルト変更リスト" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sns-prototype.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sns-prototype.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ajax-script/get-global-timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/get-global-timeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ajax-script/post-tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ajax-script/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/reply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/post_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/post_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ajax-script/follow.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/follow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ajax-script/get-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/get-status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ajax-script/get-user-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/get-user-post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ajax-script/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ajax-script/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/follow.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/follow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/timeline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/base/app-name.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/base/app-name.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index/login-vue.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/login-vue.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index/user-page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index/user-page.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sign-up.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sign-up.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +43,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.20.13" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ajax-script" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/index-vue" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\views\index-vue" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\public\ajax-script" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\public\css" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\views\index" />
       <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
-      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yuuma\WebstormProjects\sns-prototype\router" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,6 +92,13 @@
       <workItem from="1623426325120" duration="887000" />
       <workItem from="1623468245532" duration="855000" />
       <workItem from="1623580230830" duration="5128000" />
+      <workItem from="1623688621797" duration="50000" />
+      <workItem from="1623833638669" duration="607000" />
+      <workItem from="1623840109653" duration="603000" />
+      <workItem from="1623905613891" duration="664000" />
+      <workItem from="1623925975102" duration="662000" />
+      <workItem from="1623926740765" duration="820000" />
+      <workItem from="1623933407547" duration="5396000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1622045174341</created>
@@ -127,26 +133,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622045144248" />
-    <state width="1899" height="171" key="GridCell.Tab.0.bottom" timestamp="1623588150232">
+    <state x="619" y="287" width="625" height="491" key="FileChooserDialogImpl" timestamp="1623926642270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623588150232" />
-    <state width="1899" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622900178816" />
-    <state width="1899" height="171" key="GridCell.Tab.0.center" timestamp="1623588150232">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="619" y="287" width="625" height="491" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623926642270" />
+    <state width="1899" height="171" key="GridCell.Tab.0.bottom" timestamp="1623945552266">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623588150232" />
-    <state width="1899" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622900178816" />
-    <state width="1899" height="171" key="GridCell.Tab.0.left" timestamp="1623588150232">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623943971680" />
+    <state width="1899" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623945552266" />
+    <state width="1899" height="171" key="GridCell.Tab.0.center" timestamp="1623945552266">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623588150232" />
-    <state width="1899" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622900178816" />
-    <state width="1899" height="171" key="GridCell.Tab.0.right" timestamp="1623588150232">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1899" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623943971680" />
+    <state width="1899" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623945552266" />
+    <state width="1899" height="171" key="GridCell.Tab.0.left" timestamp="1623945552266">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623588150232" />
-    <state width="1899" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622900178816" />
+    <state width="1899" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623943971680" />
+    <state width="1899" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623945552266" />
+    <state width="1899" height="171" key="GridCell.Tab.0.right" timestamp="1623945552266">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623943971680" />
+    <state width="1899" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623945552266" />
     <state x="184" y="85" key="MergeDialog" timestamp="1621860858400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -159,9 +169,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="446" y="150" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621695523932" />
-    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623600321601">
+    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623688627513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623600321601" />
+    <state x="776" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623688627513" />
   </component>
 </project>

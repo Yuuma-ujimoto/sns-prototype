@@ -141,7 +141,15 @@ router.post("/get-followed-list",(req, res) => {
 
 router.post("/get-follow-count",(req, res, next) => {
     const follow_id = req.body.follow_user_id
-    const sql = "se"
+    const sql = "select count(*) as count from follow where follow_user_id = ?"
+    connection.query(sql,[follow_id],(err, result) => {
+        if(err){
+            console.log(err)
+            res.json({error:true})
+            return
+        }
+        res.json({error:false,result:result[0].count})
+    })
 })
 
 module.exports = router
